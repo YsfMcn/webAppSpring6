@@ -3,3 +3,6 @@ spring:
     view:
       prefix: /WEB-INF/jsp/ # folder location where we keep jsp pages to render
       suffix: .jsp
+  thymeleaf:
+    prefix: /WEB-INF/views/
+    suffix: .html

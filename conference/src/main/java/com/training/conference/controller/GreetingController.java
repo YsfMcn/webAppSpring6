@@ -14,4 +14,10 @@ public class GreetingController {
         return "greeting"; // name of the jsp page in /WEB-INF/jsp/ folder
     }
 
+    @GetMapping("thyme")
+    public String thyme(Map<String, Object> model) {
+        model.put("message", "Hello Thymeleaf");
+        return "thyme"; // name of the html page in /WEB-INF/views/ folder
+    }
+
 }
