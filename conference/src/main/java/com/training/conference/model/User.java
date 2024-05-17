@@ -1,11 +1,17 @@
 package com.training.conference.model;
 
-import jakarta.validation.constraints.NotEmpty;
+public class User {
 
-public class Registration {
-
-    @NotEmpty // this will not allow to add registration object with empty or null name
+    private long id;
     private String name;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
